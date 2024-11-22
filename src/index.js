@@ -3,7 +3,7 @@
 import { create, Flex } from 'smbls'
 
 import designSystem from './designSystem'
-import * as components from './components'
+import * as components from './components' 
 import pages from './pages'
 
 create({
@@ -16,11 +16,24 @@ create({
     align: 'center space-between'
   },
 
-  Header: {},
+  Header: components.Header, 
 
-  content: {},
+  content: {
+    extend: Flex,
+    props: {
+      flex: 1,
+      align: 'center center'
+    },
+    GridSelection: {
+      extend: components.GridSelection,
+      props: {
+        x: 16, 
+        y: 8
+      }
+    }
+  },
 
-  Footer: { text: 'Footer' }
+  Footer: components.Footer 
 }, {
   designSystem,
   components,

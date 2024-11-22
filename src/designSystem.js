@@ -1,6 +1,7 @@
 'use strict'
 
-import ICONS from '@symbo.ls/default-icons'
+import { DEFAULT_ICONS } from '@symbo.ls/default-icons'
+import { init } from 'smbls'
 
 /**
  * Colors
@@ -58,7 +59,7 @@ const FONT_FAMILY = {}
  * @tutorial https://docs.symbols.app/sequence
  */
 const TYPOGRAPHY = {
-  base: 16,
+  base: 14,
   ratio: 1.2
 }
 
@@ -79,12 +80,21 @@ const options = {
   useIconSprite: true
 }
 
+init({
+  grid: {
+    mainLayout: {
+      gap: 'A',
+      columns: '1fr 2fr'
+    }
+  }
+})
+
 export default {
   ...options,
   COLOR,
   GRADIENT,
   THEME,
-  ICONS,
+  DEFAULT_ICONS,
   TYPOGRAPHY,
   SPACING,
   FONT,

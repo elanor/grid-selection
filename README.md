@@ -120,11 +120,22 @@ This project served as both a practical application and a learning experience wi
 ```
 git clone https://github.com/elanor/grid-selection.git
 ```
-
+```
+cd starter-kit
+```
 2. Install scripts
 ```
-npm
+npm install
 ```
+Make sure you install `smbls`, `parcel`, `standard`
+
+
+
+Make sure to add the executable permission to cli.js:
+```
+chmod +x cli.js
+```
+
 
 3. Run the project
 ```

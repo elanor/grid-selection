@@ -1,5 +1,4 @@
 # Grid Selection Component Using Symbols Framework
-
 ## Introduction
 
 This project focuses on creating an interactive grid selection component using the Symbols framework. The primary objectives were:
@@ -27,7 +26,8 @@ To achieve the desired functionality, several modifications were made to the ini
    ``` export const GridSelection = {
       extend: Grid,
       // ...
-    };```
+    };
+    ```
 
 2. Generating Grid Items Directly
 
@@ -39,7 +39,8 @@ To achieve the desired functionality, several modifications were made to the ini
         key: false, // Prevents extra wrapping
         ...gridItems,
       };
-    },```
+    },
+    ```
 
 3. Attaching Event Handlers Properly
 
@@ -49,7 +50,8 @@ To achieve the desired functionality, several modifications were made to the ini
       click: (event, element, state) => {
         // Event handler code
       },
-    },```
+    },
+    ```
 
 4. State Management and Reactivity
 
@@ -61,7 +63,8 @@ To achieve the desired functionality, several modifications were made to the ini
       selectedRows: row,
       selectedColumns: col,
       totalSelected: row * col,
-    });```
+    });
+    ```
 
 5. Dynamic Styling Based on State
 
@@ -74,7 +77,8 @@ To achieve the desired functionality, several modifications were made to the ini
           background: isSelected ? '#3D7BD9' : '#E8F1FF',
         },
       };
-    },```
+    },
+    ```
 
 6. Adjusting the Footer
 
@@ -86,18 +90,15 @@ To achieve the desired functionality, several modifications were made to the ini
         justifyContent: 'space-between',
         width: '100%',
       },
-    },```
-
-    Updated Footer Content: The footer now shows:
-        ```Left Side: Selection coordinates: X,Y
-        Right Side: Total cells selected: N```
+    },
+    ```
 
 7. Learning the Symbols Framework
 
-    `Explored Symbols Documentation`: Throughout the development process, a key goal was to learn the Symbols framework. This involved:
-        Understanding how to properly define components, properties, and event handlers.
-        Learning how state management and reactivity work within Symbols.
-        Adhering to best practices and conventions outlined in the Symbols documentation.
+`Explored Symbols Documentation`: Throughout the development process, a key goal was to learn the Symbols framework. This involved:
+    Understanding how to properly define components, properties, and event handlers.
+    Learning how state management and reactivity work within Symbols.
+    Adhering to best practices and conventions outlined in the Symbols documentation.
 
 ## Conclusion
 
@@ -105,10 +106,10 @@ By modifying the initial template and applying the features of the Symbols frame
 
 ### Key Takeaways:
 
-    `Component Structure`: Understanding how to structure components in Symbols is crucial for creating functional and maintainable code.
-    `Event Handling`: Properly attaching event handlers ensures that user interactions are captured and processed correctly.
-    `State Management`: Utilizing the shared state object and the state.update() method allows for dynamic and responsive UI components.
-    `Layout and Styling`: Careful management of layout properties and styling is essential for achieving the desired visual appearance.
+`Component Structure`: Understanding how to structure components in Symbols is crucial for creating functional and maintainable code.
+`Event Handling`: Properly attaching event handlers ensures that user interactions are captured and processed correctly.
+`State Management`: Utilizing the shared state object and the state.update() method allows for dynamic and responsive UI components.
+`Layout and Styling`: Careful management of layout properties and styling is essential for achieving the desired visual appearance.
 
 This project served as both a practical application and a learning experience with the Symbols framework, equipping us with the knowledge to leverage its capabilities in future projects.
 
